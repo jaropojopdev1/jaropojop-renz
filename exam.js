@@ -1,11 +1,12 @@
 class Account {
+
   #amount;
 
   constructor(amount) {
     this.#amount = amount;
   }
 
-  getAmount() {
+  displayAmount() {
     return this.#amount;
   }
 
@@ -13,7 +14,7 @@ class Account {
 
 class SavingsAccount extends Account {
 
-  showType() {
+  displayAccountType() {
     return "BankAccount";
   }
 
@@ -21,5 +22,6 @@ class SavingsAccount extends Account {
 
 const savings = new SavingsAccount(500);
 
-console.log(savings.getAmount());
-console.log(savings.showType());
+console.log(savings.displayAmount());
+
+console.log(savings.displayAccountType());
