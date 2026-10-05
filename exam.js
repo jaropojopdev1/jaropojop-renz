@@ -16,6 +16,6 @@ class SavingsAccount extends Account {
   }
 }
 
-const account = new SavingsAccount(30);
+const account = new SavingsAccount(1000);
 console.log(account.getBalance());
 console.log(account.showType());
