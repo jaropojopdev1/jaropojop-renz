@@ -1,4 +1,4 @@
-class Account {
+class Bank {
 
   #amount;
 
@@ -12,7 +12,7 @@ class Account {
 
 }
 
-class SavingsAccount extends Account {
+class DepositAccount extends Bank {
 
   displayAccountType() {
     return "BankAccount";
@@ -20,7 +20,7 @@ class SavingsAccount extends Account {
 
 }
 
-const savings = new SavingsAccount(500);
+const savings = new DepositAccount(500);
 
 console.log(savings.displayAmount());
 
