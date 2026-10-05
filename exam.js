@@ -10,6 +10,10 @@ class Bank {
     return this.#amount;
   }
 
+  deposit() {
+    return "Deposit successful";
+  }
+
 }
 
 class DepositAccount extends Bank {
@@ -35,6 +39,7 @@ class PremiumAccount extends DepositAccount {
 const account = new PremiumAccount(500);
 
 console.log(account.displayAmount());
+console.log(account.deposit());
 console.log(account.displayAccountType());
 console.log(account.showBenefits());
 console.log(account.showStatus());
