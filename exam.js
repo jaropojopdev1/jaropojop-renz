@@ -19,7 +19,7 @@ class SavingsAccount extends Account {
 
 }
 
-const savings = new SavingsAccount(1000);
+const savings = new SavingsAccount(500);
 
 console.log(savings.getAmount());
 console.log(savings.showType());
