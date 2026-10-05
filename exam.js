@@ -16,15 +16,11 @@ class Bank {
 
 }
 
-class DepositAccount extends Bank {
+class PremiumAccount extends Bank {
 
   displayAccountType() {
     return "BankAccount";
   }
-
-}
-
-class PremiumAccount extends DepositAccount {
 
   showBenefits() {
     return "Free transactions";
