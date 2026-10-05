@@ -20,8 +20,21 @@ class DepositAccount extends Bank {
 
 }
 
-const savings = new DepositAccount(500);
+class PremiumAccount extends DepositAccount {
 
-console.log(savings.displayAmount());
+  showBenefits() {
+    return "Free transactions";
+  }
 
-console.log(savings.displayAccountType());
+  showStatus() {
+    return "Premium Account";
+  }
+
+}
+
+const account = new PremiumAccount(500);
+
+console.log(account.displayAmount());
+console.log(account.displayAccountType());
+console.log(account.showBenefits());
+console.log(account.showStatus());
