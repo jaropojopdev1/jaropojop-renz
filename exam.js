@@ -1,21 +1,25 @@
 class Account {
-  #balance;
+  #amount;
 
-  constructor(balance) {
-    this.#balance = balance;
+  constructor(amount) {
+    this.#amount = amount;
   }
 
-  getBalance() {
-    return this.#balance;
+  getAmount() {
+    return this.#amount;
   }
+
 }
 
 class SavingsAccount extends Account {
+
   showType() {
     return "BankAccount";
   }
+
 }
 
-const account = new SavingsAccount(1000);
-console.log(account.getBalance());
-console.log(account.showType());
+const savings = new SavingsAccount(1000);
+
+console.log(savings.getAmount());
+console.log(savings.showType());
