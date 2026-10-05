@@ -12,7 +12,7 @@ class Account {
 
 class SavingsAccount extends Account {
   showType() {
-    return "PesoAccount";
+    return "BankAccount";
   }
 }
 
