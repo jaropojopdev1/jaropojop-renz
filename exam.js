@@ -11,7 +11,7 @@ class Bank {
   }
 
   deposit() {
-    return "Deposit successful";
+    return "Transaction completed";
   }
 
 }
@@ -19,15 +19,15 @@ class Bank {
 class PremiumAccount extends Bank {
 
   displayAccountType() {
-    return "BankAccount";
+    return "Savings Account";
   }
 
   showBenefits() {
-    return "Free transactions";
+    return "Free withdrawals";
   }
 
   showStatus() {
-    return "Premium Account";
+    return "Active Account";
   }
 
 }
